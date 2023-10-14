@@ -131,7 +131,7 @@ defmodule SnakeAppWeb.GameLive do
             socket
             |> assign(:snake, snake)
             |> assign(:board, board)
-            |> assign(:delay, if(is_frog, do: socket.assigns.delay - 5, else: socket.assigns.delay))
+            # |> assign(:delay, if(is_frog, do: socket.assigns.delay - 5, else: socket.assigns.delay))
           }
         end
       end
