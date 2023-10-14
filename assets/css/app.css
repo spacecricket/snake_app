@@ -1,0 +1,47 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+.game {
+    width: fit-content;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: white;
+    /* background-color: wheat; */
+    padding: 10px;
+}
+
+.game-over {
+    background-color: orange;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.slot {
+    height: 35px;
+    width: 35px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.snake {
+    background-color: darkgreen;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.frog {
+    font-size: x-large;
+    border-radius: 50%;
+    border-color: antiquewhite;
+    background-color: wheat;
+}
