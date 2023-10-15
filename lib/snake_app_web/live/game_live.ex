@@ -142,6 +142,7 @@ defmodule SnakeAppWeb.GameLive do
     position = {Enum.random(1..size), Enum.random(1..size)}
     case Map.get(board, position) do
       " " -> Map.put(board, position, "F")
+      "F" -> place_food(board, size)
       "S" -> place_food(board, size)
     end
   end
